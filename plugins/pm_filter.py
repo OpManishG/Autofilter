@@ -1287,7 +1287,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💠  ʜᴇʟᴘ  💠', callback_data='help'),
                     InlineKeyboardButton('♻️  ᴀʙᴏᴜᴛ  ♻️', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ  💸', url=CHNL_LNK)
+                    InlineKeyboardButton('💰  ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ  💸', url="https://t.me/Crazybotz/52")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1343,13 +1343,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "more_feature":
         buttons = [[
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
-            InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl')
+            InlineKeyboardButton('🖨️ ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('📥 ʏᴛ-ᴅʟ', callback_data='ytdl')
         ], [
-            InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker')
+            InlineKeyboardButton('❓  ꜱᴛɪᴄᴋᴇʀ-ɪᴅ  ❓', callback_data='sticker')
         ], [
-            InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
+            InlineKeyboardButton('🎵 ꜱᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('💡 ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
         ], [
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
@@ -1677,7 +1677,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "tele":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="more_feature"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
@@ -1693,7 +1693,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "ytdl":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='more_feature')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1718,7 +1718,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 )
     elif query.data == "share":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="more_feature"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
@@ -1734,7 +1734,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "song":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="more_feature"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
@@ -1750,7 +1750,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='more_feature')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1775,7 +1775,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 )
     elif query.data == "sticker":
             btn = [[
-                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="more_feature"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
