@@ -357,7 +357,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
     else:
         btn = []
@@ -368,7 +368,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -545,7 +545,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
         
     offset = 0
@@ -1250,15 +1250,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('▶ Watch online', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),  # we download Link
+                                                    InlineKeyboardButton('▶ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=lazy_stream)]])  # web stream Link
             )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('▶ Watch online', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),  # we download Link
+                                                    InlineKeyboardButton('▶ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=lazy_stream)]])  # web stream Link
             )
         except Exception as e:
             print(e)  # print the error message
@@ -1349,7 +1349,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
         ], [
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -1378,7 +1378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters'),
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file')   
          ], [ 
-             InlineKeyboardButton('● ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ ●', callback_data='more_feature'), 
+             InlineKeyboardButton('₪  ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ  ₪', callback_data='more_feature'), 
          ], [ 
          ], [             
              InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
@@ -1407,7 +1407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ᴍʏ ꜰᴀᴛʜᴇʀ', url='t.me/heartlesssn'),
-            InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('sᴏᴜʀᴄᴇ', url='t.me/crazybotz')
         ],[
             InlineKeyboardButton('ᴀʙᴏᴜᴛ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ', callback_data='stats')
         ],[
@@ -1546,7 +1546,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         await query.message.edit_text(
@@ -1603,7 +1603,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         await query.message.edit_text(
@@ -1660,7 +1660,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/creatorrio")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1676,7 +1676,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "tele":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/creatorrio")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1717,7 +1717,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "share":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/creatorrio")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1733,7 +1733,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "song":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/creatorrio")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1774,7 +1774,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "sticker":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/creatorrio")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/heartlesssn")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1935,7 +1935,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
     else:
         btn = []
@@ -1946,7 +1946,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
