@@ -1340,7 +1340,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "more_feature":
-        buttons = elif query.data == "more_feature":
         buttons = [[
             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
             InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl')
