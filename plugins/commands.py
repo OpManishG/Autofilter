@@ -143,7 +143,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
+                                InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url="https://t.me/Crazybotz")
                                 
                             
                                 
@@ -165,7 +165,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
+                          InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url="https://t.me/Crazybotz")
                          
                        
                           
@@ -324,7 +324,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
+                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url="https://t.me/Crazybotz")
                       
                    
                       
@@ -390,7 +390,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
+                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url="https://t.me/Crazybotz")
                       
                    
                       
@@ -453,7 +453,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=f'https://t.me/{SUPPORT_CHAT}')
+              InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url="https://t.me/Crazybotz")
               
            
               
