@@ -91,7 +91,7 @@ async def start(client, message):
                     InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help'),
                     InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ 💸', url=CHNL_LNK)
+                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ 💸', url="https://t.me/Crazybotz/52")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -143,7 +143,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=f'https://t.me/{SUPPORT_CHAT}')
+                                InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
                                 
                             
                                 
@@ -165,7 +165,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=f'https://t.me/{SUPPORT_CHAT}')
+                          InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
                          
                        
                           
@@ -324,7 +324,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=f'https://t.me/{SUPPORT_CHAT}')
+                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
                       
                    
                       
@@ -390,7 +390,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=f'https://t.me/{SUPPORT_CHAT}')
+                      InlineKeyboardButton('⁉️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⁉️', url=CHNL_LNK)
                       
                    
                       
@@ -1044,7 +1044,7 @@ async def showshortlink(bot, message):
             su = settings['shortlink']
             sa = settings['shortlink_api']
             st = settings['tutorial']
-            return await message.reply_text(f"<b>Shortlink Website: <code>{su}</code>\n\nApi: <code>{sa}</code>\n\nTutorial: <code>{st}</code></b>")
+            return await message.reply_text(f"<b>ᴄᴜʀʀᴇɴᴛ ꜱᴛᴀᴛᴜꜱ 📊\n\nᴡᴇʙꜱɪᴛᴇ: {su}</code>\n\nᴀᴘɪ: {sa}</code>\n\n\nᴛᴜᴛᴏʀɪᴀʟ: <code>{st}</code></b>")
         elif 'shortlink' in settings.keys() and 'tutorial' not in settings.keys():
             su = settings['shortlink']
             sa = settings['shortlink_api']
@@ -1053,7 +1053,7 @@ async def showshortlink(bot, message):
             st = settings['tutorial']
             return await message.reply_text(f"<b>Tutorial: <code>{st}</code>\n\nShortener Url Not Connected\n\nYou can Connect Using /shortlink command</b>")
         else:
-            return await message.reply_text("Shortener url and Tutorial Link Not Connected. Check this commands, /shortlink and /set_tutorial")
+            return await message.reply_text("❓ Shortener url and Tutorial Link Not Connected. Check this commands, /set_shortner and /set_tutorial")
 
 
 @Client.on_message(filters.command("set_tutorial"))
@@ -1076,15 +1076,15 @@ async def settutorial(bot, message):
     else:
         pass
     if len(message.command) == 1:
-        return await message.reply("<b>Give me a tutorial link along with this command\n\nCommand Usage: /set_tutorial your tutorial link</b>")
+        return await message.reply("<b>⁉️ Give me a tutorial link along with this command\n\nCommand Usage: /set_tutorial your tutorial link</b>")
     elif len(message.command) == 2:
         reply = await message.reply_text("<b>Please Wait...</b>")
         tutorial = message.command[1]
         await save_group_settings(grpid, 'tutorial', tutorial)
         await save_group_settings(grpid, 'is_tutorial', True)
-        await reply.edit_text(f"<b>Successfully Added Tutorial\n\nHere is your tutorial link for your group {title} - <code>{tutorial}</code></b>")
+        await reply.edit_text(f"<b>✔️ Successfully Added Tutorial\n\n✅ Here is your tutorial link for your group {title} - {tutorial}</b>")
     else:
-        return await message.reply("<b>You entered Incorrect Format\n\nFormat: /set_tutorial your tutorial link</b>")
+        return await message.reply("<b>❌ You entered Incorrect Format\n\nFormat: /set_tutorial your tutorial link</b>")
 
 @Client.on_message(filters.command("retutorial"))
 async def removetutorial(bot, message):
@@ -1107,7 +1107,7 @@ async def removetutorial(bot, message):
         pass
     reply = await message.reply_text("<b>Please Wait...</b>")
     await save_group_settings(grpid, 'is_tutorial', False)
-    await reply.edit_text(f"<b>Successfully Removed Your Tutorial Link!!!</b>")
+    await reply.edit_text(f"<b>❌ Successfully Removed Your Tutorial Link!!!</b>")
 
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
 async def stop_button(bot, message):
