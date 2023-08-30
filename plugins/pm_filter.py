@@ -132,7 +132,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
     else:
         btn = []
@@ -143,7 +143,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ⭕", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("⭕  ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ  ⭕", callback_data=f"sendfiles#{key}")
         ])
     try:
         if settings['max_btn']:
@@ -1269,6 +1269,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
 
+    elif query.data == "source":
+        await query.answer(text=script.SOURCE_TXT, show_alert=True)
+
     elif query.data == "select":
         await query.answer(text=script.SELECT, show_alert=True)
 
@@ -1337,8 +1340,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "more_feature":
+        buttons = elif query.data == "more_feature":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl')
+        ], [
+            InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker')
+        ], [
+            InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
+        ], [
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1422,30 +1435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "more_feature":
-        buttons = [[
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
-            InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl')
-        ], [
-            InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker')
-        ], [
-            InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
-        ], [
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ ⊝', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.SOURCE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
