@@ -10,7 +10,7 @@ from utils import get_file_id
 async def telegraph_upload(bot, update):
     replied = update.reply_to_message
     if not replied:
-        await update.reply_text("𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙿𝙷𝙾𝚃𝙾 𝙾𝚁 𝚅𝙸𝙳𝙴𝙾 𝚄𝙽𝙳𝙴𝚁 𝟻𝙼𝙱.")
+        await update.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴏʀ ᴠᴇᴅɪᴏ ᴜɴᴅᴇʀ 5 ᴍʙ.")
         return
     file_info = get_file_id(replied)
     if not file_info:
@@ -37,7 +37,7 @@ async def telegraph_upload(bot, update):
             InlineKeyboardButton(text="Open Link", url=f"https://graph.org{response[0]}"),
             InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
             ],[
-            InlineKeyboardButton(text="✗ Close ✗", callback_data="close")
+            InlineKeyboardButton(text="❌ Close ❌", callback_data="close")
             ]])
         )
     
