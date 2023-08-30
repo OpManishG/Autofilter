@@ -1248,23 +1248,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await asyncio.sleep(1)
             await xo.delete()
 
-            await log_msg.reply_text(
+            g = await log_msg.reply_text(
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📤 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),  # we download Link
                                                     InlineKeyboardButton('🖥️ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=lazy_stream)]])  # web stream Link
             )
-            await query.message.reply_text(
+            await asyncio.sleep(24000)
+            await z.delete()
+            z = await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📤 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),  # we download Link
                                                     InlineKeyboardButton('🖥️ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=lazy_stream)]])  # web stream Link
             )
+            await asyncio.sleep(1200)
+            await z.delete()
         except Exception as e:
             print(e)  # print the error message
-            await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
+            await query.answer(f"☣something went wrong \n\n{e}", show_alert=True)
             return
     # don't change anything without contacting me @LazyDeveloperr
 
