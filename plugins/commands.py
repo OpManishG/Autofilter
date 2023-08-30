@@ -43,7 +43,7 @@ async def start(client, message):
                     InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help'),
                     InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ 💸', url=CHNL_LNK)
+                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ 💸', url="https://t.me/Crazybotz/52")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEDJNtk7ygJce6Y6HaBsr-gAVTpMzViXAACAQADwSQxMUzllWoqwNZvHgQ") 
