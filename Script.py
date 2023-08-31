@@ -5,7 +5,7 @@ class script(object):
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    ABOUT_TXT = """<b>───[ ᴅᴇᴛᴀɪʟꜱ ]───
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/imdb5_bot>ɪᴍᴅʙ</a>
  ‣ ᴄʀᴇᴀᴛᴏʀ :: <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/heartlesssn'>ᴄʀᴀᴢʏ</a> 
@@ -154,7 +154,17 @@ Nᴀᴍᴇ - {}"""
 
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
+    MELCOW_ENG = """<b>🥵 ʜᴇʏ {}
+
+👨‍🏫 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ
+
+💣 ᴛʜɪꜱ ɪꜱ ᴀ {} ɢʀᴏᴜᴘ
+
+🍂 ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ᴏꜰ ᴍᴏᴠɪᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ
+
+🌲 ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ
+
+👽 ᴏᴜʀ ʙᴏᴛ ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜʀ ᴍᴏᴠɪᴇ</b>"""
 
     SHORTLINK_INFO = """
 <b>──────「<a href=https://t.me/howtodownloadmoviestamilhd/67> Hᴏᴡ ᴛᴏ Eᴀʀɴ Mᴏɴᴇʏ </a> 」──────
@@ -208,12 +218,11 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """══════════════════
-<b>💌 Fɪʟᴇ ɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍
+𝒇𝒊𝒍𝒆 𝒏𝒂𝒎𝒆 - {file_name}
 
-👀 Fɪʟᴇ sɪᴢᴇ : {file_size}
-
-══════════════════
+𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 - {file_size}
+≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍≍
 © @Crazybotz</b>""" 
 
     IMDB_TEMPLATE_TXT = """
