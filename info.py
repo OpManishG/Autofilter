@@ -13,12 +13,12 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28284211'))
-API_HASH = environ.get('API_HASH', '6b0afc140b8534c45de9dc77b7d37415')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5634679884:AAH6KjE4JbS5rD3ljyZSJZJx6I-rbz5WYG4")
+API_ID = int(environ.get('API_ID', '25145421'))
+API_HASH = environ.get('API_HASH', 'faa6f8032ee368c78522a9fded1c18c6')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6303459286:AAHhDpWEx3ARdnA1ZdbdBjFElhQSM4L7eFI")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 900))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/75985293b57b3fda7eb7c.jpg https://graph.org/file/51f10dc7cbd5ac64c9e21.jpg https://graph.org/file/86b8fabccd531d1b3fd7a.jpg https://graph.org/file/861996f21c9615c96d612.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/79f8532932e6fc5be7540.jpg https://graph.org/file/7631c018c423c4dfbf0cf.jpg https://graph.org/file/7631c018c423c4dfbf0cf.jpg https://graph.org/file/7631c018c423c4dfbf0cf.jpg')).split() #SAMPLE PIC
@@ -27,11 +27,11 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/khandudon302")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/c605a659444a78f828a12.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5854751717').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001747802132').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '918443304').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001904334756').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '918443304').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '918443304').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -43,7 +43,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batowaw488:0553569303@cluster0.76wnfl2.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://opmanishg:manish123@cluster0.ao5sopq.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
 DATABASE_NAME = environ.get('DATABASE_NAME', "RIONETWORKS")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -51,7 +51,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ez4short.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'ade16f386d69aa3d86d6320b5b2c906996a8d2a6')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
